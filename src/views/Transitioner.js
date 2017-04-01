@@ -206,6 +206,7 @@ class Transitioner extends React.Component<*, Props, State> {
       <View
         onLayout={this._onLayout}
         style={[styles.main, this.props.style]}
+        pointerEvents='box-none'
       >
         {this.props.render(this._transitionProps, this._prevTransitionProps)}
       </View>
