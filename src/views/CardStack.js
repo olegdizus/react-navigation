@@ -451,8 +451,10 @@ class CardStack extends Component<DefaultProps, Props, void> {
     return (
       <View
         {...handlers}
-        style={styles.container}>
-        <View style={styles.scenes}>
+        style={styles.container}
+        pointerEvents='box-none'
+      >
+        <View style={styles.scenes} pointerEvents='box-none'>
           {props.scenes.map((scene: any) => this._renderScene({
             ...props,
             scene,
